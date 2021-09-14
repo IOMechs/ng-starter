@@ -1,0 +1,16 @@
+<p>
+  The value of counter is = {{counterVal}}
+</p>
+<div>
+  {{person.name | uppercase}}
+</div>
+<div>
+  <button (click)="increment()">Increment</button>
+  <button (click)="decrement()">Decrement</button>
+</div>
+
+<div style="margin-top: 200px;">
+  <input [id]="person.name" />
+  <input [(ngModel)]="person.name" />
+</div>
+
